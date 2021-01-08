@@ -31,17 +31,20 @@
             this.components = new System.ComponentModel.Container();
             this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.gunaLinePanel3 = new Guna.UI.WinForms.GunaLinePanel();
+            this.label3 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.gunaLinePanel1 = new Guna.UI.WinForms.GunaLinePanel();
             this.gunaLinePanel2 = new Guna.UI.WinForms.GunaLinePanel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.gunaLinePanel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.gunaLinePanel1.SuspendLayout();
             this.gunaLinePanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2DragControl1
@@ -50,6 +53,8 @@
             // 
             // gunaLinePanel3
             // 
+            this.gunaLinePanel3.Controls.Add(this.pictureBox4);
+            this.gunaLinePanel3.Controls.Add(this.label3);
             this.gunaLinePanel3.Controls.Add(this.button2);
             this.gunaLinePanel3.Controls.Add(this.button1);
             this.gunaLinePanel3.Controls.Add(this.label2);
@@ -67,6 +72,17 @@
             this.gunaLinePanel3.TabIndex = 2;
             this.gunaLinePanel3.Paint += new System.Windows.Forms.PaintEventHandler(this.gunaLinePanel3_Paint);
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Italic);
+            this.label3.Location = new System.Drawing.Point(102, 468);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(186, 25);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "Bellum Sine Bello";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
+            // 
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -77,6 +93,7 @@
             this.button2.TabIndex = 4;
             this.button2.Text = "Jogo";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -110,6 +127,18 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Mensagem";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = global::Brasao_Mensagem.Properties.Resources.Sem_Título_11;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox1.Location = new System.Drawing.Point(53, 118);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(272, 274);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.MouseHover += new System.EventHandler(this.pictureBox1_MouseHover);
+            // 
             // gunaLinePanel1
             // 
             this.gunaLinePanel1.Controls.Add(this.gunaLinePanel2);
@@ -138,17 +167,17 @@
             this.gunaLinePanel2.Size = new System.Drawing.Size(401, 584);
             this.gunaLinePanel2.TabIndex = 1;
             // 
-            // pictureBox1
+            // pictureBox4
             // 
-            this.pictureBox1.BackgroundImage = global::Brasao_Mensagem.Properties.Resources.Sem_Título_11;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox1.Location = new System.Drawing.Point(53, 118);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(272, 274);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.MouseHover += new System.EventHandler(this.pictureBox1_MouseHover);
+            this.pictureBox4.BackgroundImage = global::Brasao_Mensagem.Properties.Resources.perto;
+            this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox4.Location = new System.Drawing.Point(366, 6);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(22, 22);
+            this.pictureBox4.TabIndex = 18;
+            this.pictureBox4.TabStop = false;
+            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
             // 
             // Menu
             // 
@@ -162,9 +191,10 @@
             this.Text = "Form1";
             this.gunaLinePanel3.ResumeLayout(false);
             this.gunaLinePanel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.gunaLinePanel1.ResumeLayout(false);
             this.gunaLinePanel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -180,6 +210,8 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.PictureBox pictureBox4;
     }
 }
 

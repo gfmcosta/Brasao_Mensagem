@@ -24,34 +24,60 @@ namespace Brasao_Mensagem
 
         private void button6_Click(object sender, EventArgs e)
         {
-            Menu mn = new Menu();
-            mn.Show();
             this.Hide();
+            Menu Menu = new Menu();
+            Menu.ShowDialog();
+            this.Close();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             Globais.Tema = "Campos";
+
+            this.Hide();
+            Book bk = new Book();
+            bk.ShowDialog();
+            this.Close();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             Globais.Tema = "Castelos";
+
+            this.Hide();
+            Book bk = new Book();
+            bk.ShowDialog();
+            this.Close();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
             Globais.Tema = "Quinas";
+
+            this.Hide();
+            Book bk = new Book();
+            bk.ShowDialog();
+            this.Close();
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
             Globais.Tema = "Coroa";
+
+            this.Hide();
+            Book bk = new Book();
+            bk.ShowDialog();
+            this.Close();
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
             Globais.Tema = "Timbre";
+
+            this.Hide();
+            Book bk = new Book();
+            bk.ShowDialog();
+            this.Close();
         }
     }
 }

@@ -32,7 +32,6 @@
             this.gunaShadowPanel2 = new Guna.UI.WinForms.GunaShadowPanel();
             this.gunaShadowPanel5 = new Guna.UI.WinForms.GunaShadowPanel();
             this.gunaShadowPanel3 = new Guna.UI.WinForms.GunaShadowPanel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -41,6 +40,25 @@
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
+            this.Campos = new System.Windows.Forms.GroupBox();
+            this.Titulo = new System.Windows.Forms.TextBox();
+            this.I1 = new System.Windows.Forms.TextBox();
+            this.Campos2 = new System.Windows.Forms.GroupBox();
+            this.Titulo2 = new System.Windows.Forms.TextBox();
+            this.I2 = new System.Windows.Forms.TextBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.informcao1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.som1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.Campos.SuspendLayout();
+            this.Campos2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.informcao1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.som1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -83,16 +101,6 @@
             this.gunaShadowPanel3.ShadowColor = System.Drawing.Color.Black;
             this.gunaShadowPanel3.Size = new System.Drawing.Size(10, 766);
             this.gunaShadowPanel3.TabIndex = 2;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImage = global::Brasao_Mensagem.Properties.Resources.asdadasdas;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(533, -7);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 648);
-            this.pictureBox1.TabIndex = 5;
-            this.pictureBox1.TabStop = false;
             // 
             // panel1
             // 
@@ -158,11 +166,178 @@
             this.panel8.Size = new System.Drawing.Size(44, 12);
             this.panel8.TabIndex = 11;
             // 
+            // Campos
+            // 
+            this.Campos.Controls.Add(this.Titulo);
+            this.Campos.Controls.Add(this.informcao1);
+            this.Campos.Controls.Add(this.som1);
+            this.Campos.Controls.Add(this.I1);
+            this.Campos.Location = new System.Drawing.Point(53, 11);
+            this.Campos.Name = "Campos";
+            this.Campos.Size = new System.Drawing.Size(474, 618);
+            this.Campos.TabIndex = 1;
+            this.Campos.TabStop = false;
+            // 
+            // Titulo
+            // 
+            this.Titulo.BackColor = System.Drawing.SystemColors.Control;
+            this.Titulo.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Titulo.Cursor = System.Windows.Forms.Cursors.Default;
+            this.Titulo.Font = new System.Drawing.Font("Arial", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Titulo.HideSelection = false;
+            this.Titulo.Location = new System.Drawing.Point(29, 35);
+            this.Titulo.Name = "Titulo";
+            this.Titulo.ReadOnly = true;
+            this.Titulo.Size = new System.Drawing.Size(439, 32);
+            this.Titulo.TabIndex = 500;
+            this.Titulo.TabStop = false;
+            this.Titulo.Text = "Titulo";
+            this.Titulo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // I1
+            // 
+            this.I1.BackColor = System.Drawing.SystemColors.Control;
+            this.I1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.I1.Cursor = System.Windows.Forms.Cursors.Default;
+            this.I1.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.I1.Location = new System.Drawing.Point(6, 114);
+            this.I1.Multiline = true;
+            this.I1.Name = "I1";
+            this.I1.ReadOnly = true;
+            this.I1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.I1.Size = new System.Drawing.Size(462, 480);
+            this.I1.TabIndex = 1000;
+            this.I1.TabStop = false;
+            this.I1.Text = "I1";
+            this.I1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // Campos2
+            // 
+            this.Campos2.Controls.Add(this.Titulo2);
+            this.Campos2.Controls.Add(this.I2);
+            this.Campos2.Location = new System.Drawing.Point(639, 12);
+            this.Campos2.Name = "Campos2";
+            this.Campos2.Size = new System.Drawing.Size(484, 618);
+            this.Campos2.TabIndex = 14;
+            this.Campos2.TabStop = false;
+            // 
+            // Titulo2
+            // 
+            this.Titulo2.BackColor = System.Drawing.SystemColors.Control;
+            this.Titulo2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Titulo2.Cursor = System.Windows.Forms.Cursors.Default;
+            this.Titulo2.Font = new System.Drawing.Font("Arial", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Titulo2.Location = new System.Drawing.Point(12, 35);
+            this.Titulo2.Name = "Titulo2";
+            this.Titulo2.ReadOnly = true;
+            this.Titulo2.Size = new System.Drawing.Size(466, 32);
+            this.Titulo2.TabIndex = 500;
+            this.Titulo2.TabStop = false;
+            this.Titulo2.Text = "Titulo2";
+            this.Titulo2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // I2
+            // 
+            this.I2.BackColor = System.Drawing.SystemColors.Control;
+            this.I2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.I2.Cursor = System.Windows.Forms.Cursors.Default;
+            this.I2.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.I2.Location = new System.Drawing.Point(12, 114);
+            this.I2.Multiline = true;
+            this.I2.Name = "I2";
+            this.I2.ReadOnly = true;
+            this.I2.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.I2.Size = new System.Drawing.Size(466, 480);
+            this.I2.TabIndex = 100000;
+            this.I2.TabStop = false;
+            this.I2.Text = "I2";
+            this.I2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.BackgroundImage = global::Brasao_Mensagem.Properties.Resources.perto;
+            this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox4.Location = new System.Drawing.Point(1131, 11);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(22, 22);
+            this.pictureBox4.TabIndex = 17;
+            this.pictureBox4.TabStop = false;
+            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackgroundImage = global::Brasao_Mensagem.Properties.Resources.seta_direita;
+            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox3.Location = new System.Drawing.Point(1126, 598);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(33, 31);
+            this.pictureBox3.TabIndex = 16;
+            this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackgroundImage = global::Brasao_Mensagem.Properties.Resources.seta_esq;
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox2.Location = new System.Drawing.Point(18, 597);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(33, 31);
+            this.pictureBox2.TabIndex = 15;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Visible = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            // 
+            // informcao1
+            // 
+            this.informcao1.BackgroundImage = global::Brasao_Mensagem.Properties.Resources.botao_de_informacao;
+            this.informcao1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.informcao1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.informcao1.Location = new System.Drawing.Point(330, 544);
+            this.informcao1.Name = "informcao1";
+            this.informcao1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.informcao1.ShadowDecoration.Parent = this.informcao1;
+            this.informcao1.Size = new System.Drawing.Size(50, 50);
+            this.informcao1.TabIndex = 2;
+            this.informcao1.TabStop = false;
+            this.informcao1.Click += new System.EventHandler(this.guna2CirclePictureBox2_Click);
+            // 
+            // som1
+            // 
+            this.som1.BackgroundImage = global::Brasao_Mensagem.Properties.Resources.som;
+            this.som1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.som1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.som1.Location = new System.Drawing.Point(398, 544);
+            this.som1.Name = "som1";
+            this.som1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.som1.ShadowDecoration.Parent = this.som1;
+            this.som1.Size = new System.Drawing.Size(50, 50);
+            this.som1.TabIndex = 1;
+            this.som1.TabStop = false;
+            this.som1.Click += new System.EventHandler(this.guna2CirclePictureBox1_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = global::Brasao_Mensagem.Properties.Resources.asdadasdas;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Location = new System.Drawing.Point(533, -7);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(100, 648);
+            this.pictureBox1.TabIndex = 5;
+            this.pictureBox1.TabStop = false;
+            // 
             // Book
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1178, 640);
+            this.Controls.Add(this.pictureBox4);
+            this.Controls.Add(this.pictureBox3);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.Campos);
+            this.Controls.Add(this.Campos2);
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.panel8);
             this.Controls.Add(this.panel6);
@@ -181,6 +356,15 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Book";
             this.Load += new System.EventHandler(this.Book_Load);
+            this.Campos.ResumeLayout(false);
+            this.Campos.PerformLayout();
+            this.Campos2.ResumeLayout(false);
+            this.Campos2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.informcao1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.som1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
@@ -201,5 +385,16 @@
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.GroupBox Campos;
+        private System.Windows.Forms.TextBox I1;
+        private System.Windows.Forms.TextBox Titulo;
+        private Guna.UI2.WinForms.Guna2CirclePictureBox informcao1;
+        private Guna.UI2.WinForms.Guna2CirclePictureBox som1;
+        private System.Windows.Forms.GroupBox Campos2;
+        private System.Windows.Forms.TextBox Titulo2;
+        private System.Windows.Forms.TextBox I2;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pictureBox4;
     }
 }

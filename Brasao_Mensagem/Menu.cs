@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WindowsFormsApp1;
 
 namespace Brasao_Mensagem
 {
@@ -24,9 +25,10 @@ namespace Brasao_Mensagem
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Poemas_Escolha PE = new Poemas_Escolha();
-            PE.Show();
             this.Hide();
+            Poemas_Escolha PE = new Poemas_Escolha();
+            PE.ShowDialog();
+            this.Close();
 
 
         }
@@ -35,6 +37,25 @@ namespace Brasao_Mensagem
         {
             ToolTip toolTip1 = new ToolTip();
             toolTip1.SetToolTip(pictureBox1, "Clique para saber mais");
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Quiz Quiz = new Quiz();
+            Quiz.StartPosition = FormStartPosition.CenterScreen;
+            Quiz.ShowDialog();
+            this.Close();
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
