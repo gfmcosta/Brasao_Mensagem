@@ -43,7 +43,8 @@ namespace Brasao_Mensagem
                 Poemas.Add(Texto);
                 Titulos.Add("O das Quinas");
 
-            }else if (Globais.Tema == "Castelos")
+            }
+            else if (Globais.Tema == "Castelos")
             {
                 Texto = "O mito é o nada que é tudo." + System.Environment.NewLine +"O mesmo sol que abre os céus" + System.Environment.NewLine +"É um mito brilhante e mudo —" + System.Environment.NewLine +"O corpo morto de Deus," + System.Environment.NewLine +
                  "Vivo e desnudo." + System.Environment.NewLine + System.Environment.NewLine +"Este, que aqui aportou," + System.Environment.NewLine +"Foi por não ser existindo." + System.Environment.NewLine +"Sem existir nos bastou." + System.Environment.NewLine +
@@ -109,6 +110,42 @@ namespace Brasao_Mensagem
             }
             else if (Globais.Tema == "Quinas")
             {
+                Texto = "Meu dever fez - me, como Deus ao mundo."+ System.Environment.NewLine +"A regra de ser Rei almou meu ser," + System.Environment.NewLine +"Em dia e letra escrupuloso e fundo." + System.Environment.NewLine +System.Environment.NewLine +"Firme em minha tristeza, tal vivi." + System.Environment.NewLine +
+            "Cumpri contra o Destino o meu dever." + System.Environment.NewLine +"Inutilmente? Não, porque o cumpri.";
+                Poemas.Add(Texto);
+                Titulos.Add("D. Duarte, Rei de Portugal");
+
+                //Outro Poema
+
+                Texto = "Deu-me Deus o seu gládio, por que eu faça" + System.Environment.NewLine +"A sua santa guerra." + System.Environment.NewLine +"Sagrou-me seu em honra e em desgraça," + System.Environment.NewLine +"Às horas em que um frio vento passa" + System.Environment.NewLine +
+                    "Por sobre a fria terra." + System.Environment.NewLine + System.Environment.NewLine +"Pôs-me as mãos sobre os ombros e doirou-me" + System.Environment.NewLine +"A fronte com o olhar;" + System.Environment.NewLine +"E esta febre de Além, que me consome," + System.Environment.NewLine +
+                    "E este querer grandeza são Seu nome" + System.Environment.NewLine +"Dentro em mim a vibrar." + System.Environment.NewLine + System.Environment.NewLine +"E eu vou, e a luz do gládio erguido dá" + System.Environment.NewLine +"Em minha face calma." + System.Environment.NewLine +
+                    "Cheio de Deus, não temo o que virá," + System.Environment.NewLine +"Pois, venha o que vier, nunca será" + System.Environment.NewLine +"Maior do que a minha alma.";
+                Poemas.Add(Texto);
+                Titulos.Add("D. Fernando, Infante de Portugal");
+
+                //Outro Poema
+
+                Texto = "Claro em pensar, e claro no sentir," + System.Environment.NewLine + "É claro no querer;" + System.Environment.NewLine + "Indiferente ao que há em conseguir" + System.Environment.NewLine + "Que seja só obter;" + System.Environment.NewLine + "Dúplice dono, sem me dividir," + System.Environment.NewLine +
+                    "De dever e de ser —" + System.Environment.NewLine + System.Environment.NewLine + "Não me podia a Sorte dar guarida" + System.Environment.NewLine + "Por eu não ser dos seus." + System.Environment.NewLine + "Assim vivi, assim morri, a vida," + System.Environment.NewLine +
+                    "Calmo sob mudos céus," + System.Environment.NewLine + "Fiel à palavra dada e à ideia tida." + System.Environment.NewLine + "Tudo mais é com Deus!";
+                Poemas.Add(Texto);
+                Titulos.Add("D. Pedro, Regente de Portugal");
+
+                //Outro Poema
+
+                Texto = "Não fui alguém. Minha alma estava estreita" + System.Environment.NewLine + "Entre tão grandes almas minhas pares," + System.Environment.NewLine + "Inutilmente eleita," + System.Environment.NewLine + "Virgemmente parada;" + System.Environment.NewLine + System.Environment.NewLine +
+                    "Porque é do português, pai de amplos mares," + System.Environment.NewLine + "Querer, poder só isto:" + System.Environment.NewLine + "O inteiro mar, ou a orla vã desfeita —" + System.Environment.NewLine + "O todo, ou o seu nada.";
+                Poemas.Add(Texto);
+                Titulos.Add("D. João, Infante de Portugal");
+
+                //Outro Poema
+
+                Texto = "Louco, sim, louco, porque quis grandeza" + System.Environment.NewLine + "Qual a Sorte a não dá." + System.Environment.NewLine + "Não coube em mim minha certeza;" + System.Environment.NewLine + "Por isso onde o areal está" + System.Environment.NewLine +
+                    "Ficou meu ser que houve, não o que há." + System.Environment.NewLine + System.Environment.NewLine + "Minha loucura, outros que me a tomem" + System.Environment.NewLine + "Com o que nela ia." + System.Environment.NewLine +
+                    "Sem a loucura que é o homem" + System.Environment.NewLine + "Mais que a besta sadia," + System.Environment.NewLine + "Cadáver adiado que procria?";
+                Poemas.Add(Texto);
+                Titulos.Add("D. Sebastião, Rei de Portugal");
 
             }
             else if (Globais.Tema == "Coroa")
@@ -121,7 +158,29 @@ namespace Brasao_Mensagem
             }
             else if (Globais.Tema == "Timbre")
             {
+                Titulo.Font= new Font("Arial", 16, FontStyle.Bold);
+                Titulo2.Font = new Font("Arial", 16, FontStyle.Bold);
+                Texto = "Em seu trono entre o brilho das esferas," + System.Environment.NewLine +"Com seu manto de noite e solidão," + System.Environment.NewLine +"Tem aos pés o mar novo e as mortas eras —" 
+              + System.Environment.NewLine +"O único imperador que tem, deveras," + System.Environment.NewLine +"O globo mundo em sua mão.";
+                Poemas.Add(Texto);
+                Titulos.Add("A cabeça do grifo / O infante D. Henrique");
 
+                //Outro Poema
+
+                Texto= "Braços cruzados, fita além do mar." + System.Environment.NewLine +"Parece em promontório uma alta serra —" + System.Environment.NewLine +"O limite da terra a dominar" + System.Environment.NewLine +
+                    "O mar que possa haver além da terra." + System.Environment.NewLine +System.Environment.NewLine +"Seu formidável vulto solitário" + System.Environment.NewLine +"Enche de estar presente o mar e o céu"
+                    + System.Environment.NewLine +"E parece temer o mundo vário" + System.Environment.NewLine +"Que ele abra os braços e lhe rasgue o véu.";
+                Poemas.Add(Texto);
+                Titulos.Add("Uma asa do grifo / D. João, O Segundo");
+
+                //Outro Poema
+
+                Texto = "De pé, sobre os países conquistados" + System.Environment.NewLine +"Desce os olhos cansados" + System.Environment.NewLine +"De ver o mundo e a injustiça e a sorte." + System.Environment.NewLine +
+                    "Não pensa em vida ou morte," + System.Environment.NewLine +"Tão poderoso que não quer o quanto" + System.Environment.NewLine +"Pode, que o querer tanto" + System.Environment.NewLine +
+                    "Calcara mais do que o submisso mundo" + System.Environment.NewLine +"Sob o seu passo fundo." + System.Environment.NewLine +"Três impérios do chão lhe a Sorte apanha." + System.Environment.NewLine +
+                    "Criou-os como quem desdenha.";
+                Poemas.Add(Texto);
+                Titulos.Add("A outra asa do grifo / Afonso de Albuquerque");
             }
 
 
@@ -217,8 +276,17 @@ namespace Brasao_Mensagem
                 I1.Text = Poemas[i].ToString();
                 Titulo.Text = Titulos[i].ToString();
                 i++;
-                I2.Text = Poemas[i].ToString();
-                Titulo2.Text = Titulos[i].ToString();
+                if (i == Poemas.Count)
+                {
+                    I2.Text = Environment.NewLine + Environment.NewLine + Environment.NewLine + Environment.NewLine + Environment.NewLine + Environment.NewLine + "--FIM--";
+                    Titulo2.Text="";
+                }
+                else
+                {
+                    I2.Text = Poemas[i].ToString();
+                    Titulo2.Text = Titulos[i].ToString();
+                }
+                
                 if (i % 2 != 0)
                 {
                     break;
@@ -228,11 +296,13 @@ namespace Brasao_Mensagem
             npag = i;
             if (i == 0)
             {
+                //3 é frente
                 pictureBox3.Visible = true;
                 pictureBox2.Visible = false;
             }
-            if (i == Poemas.Count-1)
+            if (i == Poemas.Count-1 || i==Poemas.Count)
             {
+                //3 é frente
                 pictureBox3.Visible = false;
             }
 

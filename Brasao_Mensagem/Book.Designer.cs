@@ -42,6 +42,8 @@
             this.panel8 = new System.Windows.Forms.Panel();
             this.Campos = new System.Windows.Forms.GroupBox();
             this.Titulo = new System.Windows.Forms.TextBox();
+            this.informcao1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.som1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.I1 = new System.Windows.Forms.TextBox();
             this.Campos2 = new System.Windows.Forms.GroupBox();
             this.Titulo2 = new System.Windows.Forms.TextBox();
@@ -49,16 +51,14 @@
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.informcao1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
-            this.som1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Campos.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.informcao1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.som1)).BeginInit();
             this.Campos2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.informcao1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.som1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -185,14 +185,42 @@
             this.Titulo.Cursor = System.Windows.Forms.Cursors.Default;
             this.Titulo.Font = new System.Drawing.Font("Arial", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Titulo.HideSelection = false;
-            this.Titulo.Location = new System.Drawing.Point(29, 35);
+            this.Titulo.Location = new System.Drawing.Point(6, 35);
             this.Titulo.Name = "Titulo";
             this.Titulo.ReadOnly = true;
-            this.Titulo.Size = new System.Drawing.Size(439, 32);
+            this.Titulo.Size = new System.Drawing.Size(462, 32);
             this.Titulo.TabIndex = 500;
             this.Titulo.TabStop = false;
             this.Titulo.Text = "Titulo";
             this.Titulo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // informcao1
+            // 
+            this.informcao1.BackgroundImage = global::Brasao_Mensagem.Properties.Resources.botao_de_informacao;
+            this.informcao1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.informcao1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.informcao1.Location = new System.Drawing.Point(330, 544);
+            this.informcao1.Name = "informcao1";
+            this.informcao1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.informcao1.ShadowDecoration.Parent = this.informcao1;
+            this.informcao1.Size = new System.Drawing.Size(50, 50);
+            this.informcao1.TabIndex = 2;
+            this.informcao1.TabStop = false;
+            this.informcao1.Click += new System.EventHandler(this.guna2CirclePictureBox2_Click);
+            // 
+            // som1
+            // 
+            this.som1.BackgroundImage = global::Brasao_Mensagem.Properties.Resources.som;
+            this.som1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.som1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.som1.Location = new System.Drawing.Point(398, 544);
+            this.som1.Name = "som1";
+            this.som1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.som1.ShadowDecoration.Parent = this.som1;
+            this.som1.Size = new System.Drawing.Size(50, 50);
+            this.som1.TabIndex = 1;
+            this.som1.TabStop = false;
+            this.som1.Click += new System.EventHandler(this.guna2CirclePictureBox1_Click);
             // 
             // I1
             // 
@@ -290,34 +318,6 @@
             this.pictureBox2.Visible = false;
             this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
-            // informcao1
-            // 
-            this.informcao1.BackgroundImage = global::Brasao_Mensagem.Properties.Resources.botao_de_informacao;
-            this.informcao1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.informcao1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.informcao1.Location = new System.Drawing.Point(330, 544);
-            this.informcao1.Name = "informcao1";
-            this.informcao1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.informcao1.ShadowDecoration.Parent = this.informcao1;
-            this.informcao1.Size = new System.Drawing.Size(50, 50);
-            this.informcao1.TabIndex = 2;
-            this.informcao1.TabStop = false;
-            this.informcao1.Click += new System.EventHandler(this.guna2CirclePictureBox2_Click);
-            // 
-            // som1
-            // 
-            this.som1.BackgroundImage = global::Brasao_Mensagem.Properties.Resources.som;
-            this.som1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.som1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.som1.Location = new System.Drawing.Point(398, 544);
-            this.som1.Name = "som1";
-            this.som1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.som1.ShadowDecoration.Parent = this.som1;
-            this.som1.Size = new System.Drawing.Size(50, 50);
-            this.som1.TabIndex = 1;
-            this.som1.TabStop = false;
-            this.som1.Click += new System.EventHandler(this.guna2CirclePictureBox1_Click);
-            // 
             // pictureBox1
             // 
             this.pictureBox1.BackgroundImage = global::Brasao_Mensagem.Properties.Resources.asdadasdas;
@@ -358,13 +358,13 @@
             this.Load += new System.EventHandler(this.Book_Load);
             this.Campos.ResumeLayout(false);
             this.Campos.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.informcao1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.som1)).EndInit();
             this.Campos2.ResumeLayout(false);
             this.Campos2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.informcao1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.som1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
