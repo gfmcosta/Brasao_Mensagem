@@ -20,6 +20,8 @@ namespace Brasao_Mensagem
         int npag=0;
         ArrayList Titulos = new ArrayList();
         ArrayList Poemas = new ArrayList();
+        System.Media.SoundPlayer player = new System.Media.SoundPlayer();
+
         void Escolha()
         {
             Poemas.Clear();
@@ -216,7 +218,11 @@ namespace Brasao_Mensagem
                 npag = 1;
 
             }
-            
+            if (Globais.Tema == "Campos" || Globais.Tema == "Castelos")
+            {
+                informcao1.Visible = true;
+            }
+
         }
 
         private void guna2GroupBox1_Click(object sender, EventArgs e)
@@ -231,12 +237,49 @@ namespace Brasao_Mensagem
 
         private void guna2CirclePictureBox2_Click(object sender, EventArgs e)
         {
+            foreach (Control child in this.Controls)
+            {
+                if (child != infoPanel)
+                    child.Enabled = false;
+            }
+            if (Globais.Tema == "Castelos")
+            {
+                infoPanel.Visible = true;
+                ulissesBOX.Visible = true;
+            }
+            else if (Globais.Tema == "Campos")
+            {
 
+            }
         }
 
         private void guna2CirclePictureBox1_Click(object sender, EventArgs e)
         {
-
+            if (Globais.Tema == "Campos")
+            {
+                player = new System.Media.SoundPlayer(Application.StartupPath + @"\ODosCastelos.wav");
+                player.Play();
+            }
+            else if(Globais.Tema == "Castelos")
+            {
+                player = new System.Media.SoundPlayer(Application.StartupPath + @"\Ulisses.wav");
+                player.Play();
+            }
+            else if (Globais.Tema == "Quinas")
+            {
+                player = new System.Media.SoundPlayer(Application.StartupPath + @"\DDuarte.wav");
+                player.Play();
+            }
+            else if (Globais.Tema == "Coroa")
+            {
+                player = new System.Media.SoundPlayer(Application.StartupPath + @"\Nuno.wav");
+                player.Play();
+            }
+            else if (Globais.Tema == "Timbre")
+            {
+                player = new System.Media.SoundPlayer(Application.StartupPath + @"\Grifo.wav");
+                player.Play();
+            }
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
@@ -263,12 +306,28 @@ namespace Brasao_Mensagem
                 pictureBox2.Visible = false;
                 pictureBox3.Visible = true;
             }
+            if (i < 2)
+            {
+                som1.Visible = true;
+                informcao1.Visible = true;
+            }
+            if ((i < 2 && Globais.Tema == "Campos") || (i < 2 && Globais.Tema == "Castelos"))
+            {
+                informcao1.Visible = true;
+            }
+            else
+            {
+                informcao1.Visible = false;
+            }
 
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
             //Se nao funciaonar, só funciona para Castelos
+            player.Stop();
+            informcao1.Visible = false;
+            som1.Visible = false;
             pictureBox2.Visible = true;
             int i;
             for(i=npag+1; i<Poemas.Count; i++)
@@ -310,10 +369,27 @@ namespace Brasao_Mensagem
 
         private void pictureBox4_Click(object sender, EventArgs e)
         {
+            player.Stop();
             this.Hide();
             Poemas_Escolha PE = new Poemas_Escolha();
             PE.ShowDialog();
             this.Close();
+        }
+
+        private void I1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+            infoPanel.Visible = false;
+            ulissesBOX.Visible = false;
+            foreach (Control child in this.Controls)
+            { 
+                    child.Enabled = true;
+            }
+
         }
     }
 }

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Book));
             this.gunaShadowPanel4 = new Guna.UI.WinForms.GunaShadowPanel();
             this.gunaShadowPanel2 = new Guna.UI.WinForms.GunaShadowPanel();
             this.gunaShadowPanel5 = new Guna.UI.WinForms.GunaShadowPanel();
@@ -42,24 +43,34 @@
             this.panel8 = new System.Windows.Forms.Panel();
             this.Campos = new System.Windows.Forms.GroupBox();
             this.Titulo = new System.Windows.Forms.TextBox();
-            this.informcao1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
-            this.som1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.I1 = new System.Windows.Forms.TextBox();
             this.Campos2 = new System.Windows.Forms.GroupBox();
             this.Titulo2 = new System.Windows.Forms.TextBox();
             this.I2 = new System.Windows.Forms.TextBox();
+            this.infoPanel = new Guna.UI2.WinForms.Guna2Panel();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.informcao1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.som1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.ulissesBOX = new System.Windows.Forms.GroupBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.gunaLinePanel1 = new Guna.UI.WinForms.GunaLinePanel();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.Campos.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.informcao1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.som1)).BeginInit();
             this.Campos2.SuspendLayout();
+            this.infoPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.informcao1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.som1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.ulissesBOX.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.SuspendLayout();
             // 
             // gunaShadowPanel4
@@ -194,34 +205,6 @@
             this.Titulo.Text = "Titulo";
             this.Titulo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // informcao1
-            // 
-            this.informcao1.BackgroundImage = global::Brasao_Mensagem.Properties.Resources.botao_de_informacao;
-            this.informcao1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.informcao1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.informcao1.Location = new System.Drawing.Point(330, 544);
-            this.informcao1.Name = "informcao1";
-            this.informcao1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.informcao1.ShadowDecoration.Parent = this.informcao1;
-            this.informcao1.Size = new System.Drawing.Size(50, 50);
-            this.informcao1.TabIndex = 2;
-            this.informcao1.TabStop = false;
-            this.informcao1.Click += new System.EventHandler(this.guna2CirclePictureBox2_Click);
-            // 
-            // som1
-            // 
-            this.som1.BackgroundImage = global::Brasao_Mensagem.Properties.Resources.som;
-            this.som1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.som1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.som1.Location = new System.Drawing.Point(398, 544);
-            this.som1.Name = "som1";
-            this.som1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.som1.ShadowDecoration.Parent = this.som1;
-            this.som1.Size = new System.Drawing.Size(50, 50);
-            this.som1.TabIndex = 1;
-            this.som1.TabStop = false;
-            this.som1.Click += new System.EventHandler(this.guna2CirclePictureBox1_Click);
-            // 
             // I1
             // 
             this.I1.BackColor = System.Drawing.SystemColors.Control;
@@ -238,6 +221,7 @@
             this.I1.TabStop = false;
             this.I1.Text = "I1";
             this.I1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.I1.TextChanged += new System.EventHandler(this.I1_TextChanged);
             // 
             // Campos2
             // 
@@ -281,6 +265,20 @@
             this.I2.Text = "I2";
             this.I2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
+            // infoPanel
+            // 
+            this.infoPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(212)))), ((int)(((byte)(152)))));
+            this.infoPanel.BorderColor = System.Drawing.Color.Black;
+            this.infoPanel.BorderRadius = 4;
+            this.infoPanel.BorderThickness = 1;
+            this.infoPanel.Controls.Add(this.ulissesBOX);
+            this.infoPanel.Location = new System.Drawing.Point(81, 33);
+            this.infoPanel.Name = "infoPanel";
+            this.infoPanel.ShadowDecoration.Parent = this.infoPanel;
+            this.infoPanel.Size = new System.Drawing.Size(418, 575);
+            this.infoPanel.TabIndex = 1001;
+            this.infoPanel.Visible = false;
+            // 
             // pictureBox4
             // 
             this.pictureBox4.BackgroundImage = global::Brasao_Mensagem.Properties.Resources.perto;
@@ -318,6 +316,35 @@
             this.pictureBox2.Visible = false;
             this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
+            // informcao1
+            // 
+            this.informcao1.BackgroundImage = global::Brasao_Mensagem.Properties.Resources.botao_de_informacao;
+            this.informcao1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.informcao1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.informcao1.Location = new System.Drawing.Point(330, 544);
+            this.informcao1.Name = "informcao1";
+            this.informcao1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.informcao1.ShadowDecoration.Parent = this.informcao1;
+            this.informcao1.Size = new System.Drawing.Size(50, 50);
+            this.informcao1.TabIndex = 2;
+            this.informcao1.TabStop = false;
+            this.informcao1.Visible = false;
+            this.informcao1.Click += new System.EventHandler(this.guna2CirclePictureBox2_Click);
+            // 
+            // som1
+            // 
+            this.som1.BackgroundImage = global::Brasao_Mensagem.Properties.Resources.som;
+            this.som1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.som1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.som1.Location = new System.Drawing.Point(398, 544);
+            this.som1.Name = "som1";
+            this.som1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.som1.ShadowDecoration.Parent = this.som1;
+            this.som1.Size = new System.Drawing.Size(50, 50);
+            this.som1.TabIndex = 1;
+            this.som1.TabStop = false;
+            this.som1.Click += new System.EventHandler(this.guna2CirclePictureBox1_Click);
+            // 
             // pictureBox1
             // 
             this.pictureBox1.BackgroundImage = global::Brasao_Mensagem.Properties.Resources.asdadasdas;
@@ -328,6 +355,91 @@
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
             // 
+            // ulissesBOX
+            // 
+            this.ulissesBOX.Controls.Add(this.pictureBox5);
+            this.ulissesBOX.Controls.Add(this.gunaLinePanel1);
+            this.ulissesBOX.Controls.Add(this.textBox3);
+            this.ulissesBOX.Controls.Add(this.textBox2);
+            this.ulissesBOX.Controls.Add(this.textBox1);
+            this.ulissesBOX.Location = new System.Drawing.Point(13, 13);
+            this.ulissesBOX.Name = "ulissesBOX";
+            this.ulissesBOX.Size = new System.Drawing.Size(393, 547);
+            this.ulissesBOX.TabIndex = 0;
+            this.ulissesBOX.TabStop = false;
+            this.ulissesBOX.Visible = false;
+            // 
+            // textBox1
+            // 
+            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(212)))), ((int)(((byte)(152)))));
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox1.Cursor = System.Windows.Forms.Cursors.Default;
+            this.textBox1.Font = new System.Drawing.Font("Arial", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(6, 19);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
+            this.textBox1.Size = new System.Drawing.Size(381, 32);
+            this.textBox1.TabIndex = 501;
+            this.textBox1.TabStop = false;
+            this.textBox1.Text = "Ulisses";
+            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // textBox2
+            // 
+            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(212)))), ((int)(((byte)(152)))));
+            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox2.Cursor = System.Windows.Forms.Cursors.Default;
+            this.textBox2.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.Location = new System.Drawing.Point(6, 65);
+            this.textBox2.Multiline = true;
+            this.textBox2.Name = "textBox2";
+            this.textBox2.ReadOnly = true;
+            this.textBox2.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.textBox2.Size = new System.Drawing.Size(381, 244);
+            this.textBox2.TabIndex = 100001;
+            this.textBox2.TabStop = false;
+            this.textBox2.Text = resources.GetString("textBox2.Text");
+            // 
+            // textBox3
+            // 
+            this.textBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(212)))), ((int)(((byte)(152)))));
+            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox3.Cursor = System.Windows.Forms.Cursors.Default;
+            this.textBox3.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox3.Location = new System.Drawing.Point(6, 370);
+            this.textBox3.Multiline = true;
+            this.textBox3.Name = "textBox3";
+            this.textBox3.ReadOnly = true;
+            this.textBox3.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.textBox3.Size = new System.Drawing.Size(381, 177);
+            this.textBox3.TabIndex = 100002;
+            this.textBox3.TabStop = false;
+            this.textBox3.Text = "Tipo de Rima: Cruzada\r\n\r\nO mito é o nada que é tudo. ----->A\r\nO mesmo sol que abr" +
+    "e os céus ----->B\r\nÉ um mito brilhante e mudo ----->A\r\nO corpo morto de Deus, --" +
+    "--->B\r\nVivo e desnudo. ----->A";
+            // 
+            // gunaLinePanel1
+            // 
+            this.gunaLinePanel1.LineColor = System.Drawing.Color.Black;
+            this.gunaLinePanel1.LineStyle = System.Windows.Forms.BorderStyle.None;
+            this.gunaLinePanel1.LineTop = 3;
+            this.gunaLinePanel1.Location = new System.Drawing.Point(20, 334);
+            this.gunaLinePanel1.Name = "gunaLinePanel1";
+            this.gunaLinePanel1.Size = new System.Drawing.Size(343, 14);
+            this.gunaLinePanel1.TabIndex = 100003;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.BackgroundImage = global::Brasao_Mensagem.Properties.Resources.perto;
+            this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox5.Location = new System.Drawing.Point(365, 11);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(22, 22);
+            this.pictureBox5.TabIndex = 100004;
+            this.pictureBox5.TabStop = false;
+            this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
+            // 
             // Book
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -336,6 +448,7 @@
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.infoPanel);
             this.Controls.Add(this.Campos);
             this.Controls.Add(this.Campos2);
             this.Controls.Add(this.panel7);
@@ -358,14 +471,18 @@
             this.Load += new System.EventHandler(this.Book_Load);
             this.Campos.ResumeLayout(false);
             this.Campos.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.informcao1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.som1)).EndInit();
             this.Campos2.ResumeLayout(false);
             this.Campos2.PerformLayout();
+            this.infoPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.informcao1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.som1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.ulissesBOX.ResumeLayout(false);
+            this.ulissesBOX.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -396,5 +513,12 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox4;
+        private Guna.UI2.WinForms.Guna2Panel infoPanel;
+        private System.Windows.Forms.GroupBox ulissesBOX;
+        private Guna.UI.WinForms.GunaLinePanel gunaLinePanel1;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.PictureBox pictureBox5;
     }
 }

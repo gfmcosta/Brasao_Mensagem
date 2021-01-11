@@ -6,8 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows.Forms;
-using WindowsFormsApp1;
+using System.Windows.Forms;using WindowsFormsApp1;
 
 namespace Brasao_Mensagem
 {
@@ -42,7 +41,7 @@ namespace Brasao_Mensagem
         private void button2_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Quiz Quiz = new Quiz();
+            WindowsFormsApp1.Form1 Quiz = new WindowsFormsApp1.Form1();
             Quiz.StartPosition = FormStartPosition.CenterScreen;
             Quiz.ShowDialog();
             this.Close();
@@ -56,6 +55,15 @@ namespace Brasao_Mensagem
         private void pictureBox4_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            WindowsFormsApp1.SimbologiaBrasao simbologiaBrasao = new SimbologiaBrasao();
+            simbologiaBrasao.StartPosition = FormStartPosition.CenterScreen;
+            simbologiaBrasao.ShowDialog();
+            this.Close();
         }
     }
 }

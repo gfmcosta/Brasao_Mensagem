@@ -34,9 +34,12 @@ C:\Users\costa\Desktop\Brasao_Mensagem\Brasao_Mensagem\obj\Debug\Brasao_Mensagem
 C:\Users\costa\Desktop\Brasao_Mensagem\Brasao_Mensagem\obj\Debug\Brasao_Mensagem.Menu.resources
 C:\Users\costa\Desktop\Brasao_Mensagem\Brasao_Mensagem\obj\Debug\Brasao_Mensagem.Poemas_Escolha.resources
 C:\Users\costa\Desktop\Brasao_Mensagem\Brasao_Mensagem\obj\Debug\Brasao_Mensagem.Properties.Resources.resources
-C:\Users\costa\Desktop\Brasao_Mensagem\Brasao_Mensagem\obj\Debug\WindowsFormsApp1.Quiz.resources
 C:\Users\costa\Desktop\Brasao_Mensagem\Brasao_Mensagem\obj\Debug\Brasao_Mensagem.csproj.GenerateResource.cache
 C:\Users\costa\Desktop\Brasao_Mensagem\Brasao_Mensagem\obj\Debug\Brasao_Mensagem.csproj.CoreCompileInputs.cache
 C:\Users\costa\Desktop\Brasao_Mensagem\Brasao_Mensagem\obj\Debug\Brasao_Mensagem.csproj.CopyComplete
 C:\Users\costa\Desktop\Brasao_Mensagem\Brasao_Mensagem\obj\Debug\Brasao_Mensagem.exe
 C:\Users\costa\Desktop\Brasao_Mensagem\Brasao_Mensagem\obj\Debug\Brasao_Mensagem.pdb
+C:\Users\costa\Desktop\Brasao_Mensagem\Brasao_Mensagem\obj\Debug\Brasao_Mensagem.csprojAssemblyReference.cache
+C:\Users\costa\Desktop\Brasao_Mensagem\Brasao_Mensagem\obj\Debug\WindowsFormsApp1.SimbologiaBrasao.resources
+C:\Users\costa\Desktop\Brasao_Mensagem\Brasao_Mensagem\obj\Debug\WindowsFormsApp1.Form1.resources
+C:\Users\costa\Desktop\Brasao_Mensagem\Brasao_Mensagem\obj\Debug\WindowsFormsApp1.Form2.resources

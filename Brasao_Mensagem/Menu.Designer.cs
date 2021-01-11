@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.gunaLinePanel3 = new Guna.UI.WinForms.GunaLinePanel();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
@@ -39,12 +40,11 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.gunaLinePanel1 = new Guna.UI.WinForms.GunaLinePanel();
             this.gunaLinePanel2 = new Guna.UI.WinForms.GunaLinePanel();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.gunaLinePanel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.gunaLinePanel1.SuspendLayout();
             this.gunaLinePanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2DragControl1
@@ -71,6 +71,18 @@
             this.gunaLinePanel3.Size = new System.Drawing.Size(393, 578);
             this.gunaLinePanel3.TabIndex = 2;
             this.gunaLinePanel3.Paint += new System.Windows.Forms.PaintEventHandler(this.gunaLinePanel3_Paint);
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.BackgroundImage = global::Brasao_Mensagem.Properties.Resources.perto;
+            this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox4.Location = new System.Drawing.Point(366, 6);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(22, 22);
+            this.pictureBox4.TabIndex = 18;
+            this.pictureBox4.TabStop = false;
+            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
             // 
             // label3
             // 
@@ -137,6 +149,7 @@
             this.pictureBox1.Size = new System.Drawing.Size(272, 274);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             this.pictureBox1.MouseHover += new System.EventHandler(this.pictureBox1_MouseHover);
             // 
             // gunaLinePanel1
@@ -167,18 +180,6 @@
             this.gunaLinePanel2.Size = new System.Drawing.Size(401, 584);
             this.gunaLinePanel2.TabIndex = 1;
             // 
-            // pictureBox4
-            // 
-            this.pictureBox4.BackgroundImage = global::Brasao_Mensagem.Properties.Resources.perto;
-            this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox4.Location = new System.Drawing.Point(366, 6);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(22, 22);
-            this.pictureBox4.TabIndex = 18;
-            this.pictureBox4.TabStop = false;
-            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
-            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -191,10 +192,10 @@
             this.Text = "Form1";
             this.gunaLinePanel3.ResumeLayout(false);
             this.gunaLinePanel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.gunaLinePanel1.ResumeLayout(false);
             this.gunaLinePanel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
 
         }
